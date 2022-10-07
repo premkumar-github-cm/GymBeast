@@ -1,0 +1,163 @@
+
+#this{
+    color:#D75281
+}
+.box1 a{
+    text-decoration: none;
+    color:black;
+}
+
+
+
+
+.container1{
+    width:100%;
+    height: 650px;
+    background-color: #277BC0;
+    color: white;
+    padding-top: 10%;
+}
+.container1 h1{
+    margin:0;
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+.container1 p{
+    width: 45%;
+    margin: auto;
+    text-align: center;
+}
+
+
+.container2{
+    width:100%;
+    background-color: #ffffff;
+    position: relative;
+}
+
+.container2 .slot{
+    width: 75%;
+    height: 500px;
+    margin:auto;
+    position: relative;
+    top:-100px;
+    background-color: white;
+    display: flex;
+
+}
+.slot .text{
+    width:50%;
+    height: 500px;
+    padding: 10% 5%;
+}
+.slot .text p{
+    margin-bottom: 20px;
+    width: 80%;
+}
+.slot img{
+    width:50%;
+    height: 500px;
+}
+
+
+
+.container3{
+    width:100%;
+    text-align: center;
+    padding: 5% 0;
+    background-color: #277BC0;
+    color:white;
+    height: auto;
+    position: relative;;
+}
+.container3 p{
+    width: 40%;
+    margin: auto;
+}
+
+.container3 .areas{
+    width:100%;
+    height: 400px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.area{
+    width:450px;
+    height: 380px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.area img{
+    width:450px;
+    height: 380px;
+}
+
+.area img:hover{
+    transform: scale(1.2,1.2);
+    transition: 1.2s;
+}
+
+
+
+
+
+
+
+/* ************************************* MOBILE VIEW ********************************* */
+
+
+@media only screen and (max-width:500px) and (min-width:300px) {
+    
+.container1 {
+    padding-top: 30%;
+}
+
+.container1 h1 {
+    font-size: 2.5rem;
+}
+.container1 p{
+    width: 80%;
+    margin-top: 50px;
+    font-size: 1.2rem;
+}
+
+
+.container2 .slot{
+    height: auto;
+    width: 100%;
+}
+.container2 .slot .text{
+    width: 95%;
+    margin:auto;
+    height: auto;
+}
+.container2 p{
+    margin-bottom: 0;
+
+}
+.container2 img{
+    width: 90%;
+    height: 400px;
+}
+
+.container3 p{
+    width: 90%;
+}
+.container3 .areas{
+    flex-direction: column;
+    height: auto;;
+}
+.container3 .area{
+    width:90%;
+    height: 370px
+}
+.container3 img{
+    width: 100%;
+    height: 350px;
+}
+}

@@ -1,0 +1,109 @@
+
+#this{
+    color:#D75281
+}
+
+
+.container1{
+    width:100%;
+    height: 650px;
+    background-color: #277BC0;
+    color: white;
+    padding-top: 10%;
+}
+.container1 h1{
+    margin:0;
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+.container1 p{
+    width: 45%;
+    margin: auto;
+    text-align: center;
+}
+
+
+.container2{
+    width:100%;
+    background-color: #ffffff;
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.container2 .slot{
+    width: 27%;
+    height: auto;
+    margin:auto;
+    position: relative;
+    top:-100px;
+    background-color: white;
+    text-align: center;
+    border:1px solid black;
+    padding-top: 2%;
+    border-radius: 5px;
+}
+/* .slot .text{
+    width:100%;
+    height: 400px;
+
+} */
+
+.slot .text p{
+    margin-bottom: 20px;
+    width: 100%;
+}
+.slot .text button{
+    background-color: #D75281;
+    border:none;
+    outline:none;
+    border-radius: 5px;
+    color:white;
+    padding:15px 45px;
+    cursor:pointer;
+    margin-bottom: 20px;
+}
+.slot .text button:hover{
+    opacity: .7;
+}
+
+
+
+
+/* ******************************** MOBILE VIEW ****************************** */
+
+@media only screen and (max-width:500px) and (min-width:300px) {
+
+    body{
+        width: 100%;
+        ;
+    }
+    .container1 {
+        padding-top: 30%;
+    }
+    
+    .container1 h1 {
+        font-size: 2.5rem;
+    }
+    .container1 p{
+        width: 80%;
+        margin-top: 50px;
+        font-size: 1.2rem;
+    }
+
+    .container2{
+        flex-direction: column;
+    }
+    .container2 .slot{
+        background-color: red;
+        width: 95%;
+        padding:0;
+    }
+    .container2 .slot .text{
+        width: 100%;
+        height: auto;
+        padding-bottom: 30px;
+    }
+
+}
